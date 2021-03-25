@@ -16,7 +16,8 @@ import javax.validation.Valid
 
 @Validated
 @Controller("/api/v1/clientes/{clienteId}")
-class RegistraChavePixController (private val registraChavePixClient: KeymanagerRegistraGrpcServiceGrpc.KeymanagerRegistraGrpcServiceBlockingStub){
+class RegistraChavePixController (private val registraChavePixClient
+: KeymanagerRegistraGrpcServiceGrpc.KeymanagerRegistraGrpcServiceBlockingStub){
 
     private val Logger = LoggerFactory.getLogger(this::class.java)
 
